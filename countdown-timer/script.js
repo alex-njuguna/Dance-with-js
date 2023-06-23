@@ -11,11 +11,16 @@ function countDown(){
 
     const totalSeconds = (newYearsDate - currentDate) / 1000
 
-    const days = Math.floor(totalSeconds / 3600 / 24)
+    const seconds = Math.floor(totalSeconds % 60)
+    const minutes = Math.floor(totalSeconds / 60) % 60
+    const hours = Math.floor(totalSeconds / 3600) % 24
+    const days = Math.floor(totalSeconds / (60 * 60 * 24))
+
+    /*const days = Math.floor(totalSeconds / 3600 / 24)
     const hours = Math.floor(totalSeconds / 3600) % 24
     const minutes = Math.floor(totalSeconds / 60) % 60
     const seconds = Math.floor(totalSeconds) % 60
-
+*/
 
     daysEl.innerHTML = days
     hoursEl.innerHTML = formatTime(hours)
