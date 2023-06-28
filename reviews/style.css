@@ -1,9 +1,114 @@
+/* style.css */
 
-*{
-    box-sizing: border-box;
+/* Reset default margin and padding */
+body, h2, h4, p {
+    margin: 0;
+    padding: 0;
 }
 
-body{
-    font-family:'Times New Roman', Times, serif;
-    margin: 0;
+/* Set background color and center the content */
+body {
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Style the container */
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.16);
+    max-width: 500px;
+}
+
+/* Style the title */
+.title {
+    margin-bottom: 20px;
+}
+
+.title h2 {
+    font-size: 24px;
+}
+
+.underline {
+    width: 50px;
+    height: 3px;
+    background-color: #f44336;
+    margin: 0 auto;
+}
+
+/* Style the review */
+.review {
+    margin-bottom: 20px;
+}
+
+.img-container {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+#person-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+h4 {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+#job {
+    font-size: 16px;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+#info {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* Style the button container */
+.button-container {
+    margin-bottom: 20px;
+}
+
+/* Style the buttons */
+.prev-btn, .next-btn, .random-btn {
+    padding: 5px 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.prev-btn, .next-btn {
+    background-color: #ce5151;
+    color: #333;
+    margin: 0 5px;
+}
+
+.random-btn {
+    background-color: #f44336;
+    color: #fff;
+}
+
+.prev-btn:hover, .next-btn:hover, .random-btn:hover {
+    background-color: #e0e0e0;
+}
+
+/* Style the font awesome icons */
+i.fa-chevron-left, i.fa-chevron-right {
+    font-size: 12px;
 }
