@@ -8,14 +8,14 @@ const reviews = [
     },
     {
         id: 2,
-        name: 'Danielle Wart',
+        name: 'danniele morgan',
         job: 'human resource officer',
         img: 'images/person2.jpeg',
         text: 'Maecenas eu leo feugiat, dapibus magna eget, facilisis metus.'
     },
     {
         id: 3,
-        name: 'Peter Jimenez',
+        name: 'jesus jimenez',
         job: 'UX designer',
         img: 'images/person3.jpg',
         text: 'Curabitur eu est id erat varius fermentum. Sed pellentesque dolor eu libero imperdiet laoreet. Nulla facilisi.'
