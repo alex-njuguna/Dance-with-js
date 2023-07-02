@@ -1,0 +1,97 @@
+/* style.css */
+
+/* General styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Sidebar styles */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: -300px; /* Hide the sidebar by default */
+    width: 300px;
+    height: 100vh;
+    background-color: #f0f0f0;
+    transition: left 0.3s ease;
+  }
+  
+  .sidebar.show-sidebar {
+    left: 0; /* Show the sidebar when the class is applied */
+  }
+  
+  .sidebar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #fff;
+  }
+  
+  .logo {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .close-btn {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  .links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .links li {
+    margin-bottom: 10px;
+  }
+  
+  .links a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.3s ease;
+  }
+  
+  .links a:hover {
+    background-color: #ddd;
+  }
+  
+  .social-icons {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .social-icons li {
+    margin-right: 10px;
+  }
+  
+  .social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    background-color: #555;
+  }
+  
+  /* Font Awesome */
+  @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css");
+  
