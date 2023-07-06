@@ -1,1 +1,1 @@
-base project
+menu project
