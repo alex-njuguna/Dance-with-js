@@ -17,6 +17,6 @@ btnEl.addEventListener("click", () => {
             age--
         }
     
-        pEl.innerHTML = `Your age is: ${age} years old`
+        pEl.innerHTML = `Your age is: ${age} ${age > 1 ? "years" : "year"} old`
     }
 })
